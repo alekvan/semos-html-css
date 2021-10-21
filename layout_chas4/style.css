@@ -84,3 +84,46 @@ img {
   font-size: 14px;
   color: rgb(105, 105, 105);
 }
+
+.msg-btn {
+  background-color: #ebebeb;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-family: "Roboto";
+  font-weight: bolder;
+  font-size: 17px;
+  padding: 9px 76px;
+  text-decoration: none;
+  text-align: center;
+}
+.msg-btn:hover {
+  background-color: #dedede;
+}
+.msg-btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.follow-btn {
+  background-color: #0f71cc;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  color: #f8f8f8;
+  font-family: "Roboto";
+  font-weight: bolder;
+  font-size: 17px;
+  margin-top: 10px;
+  padding: 9px 76px;
+  text-decoration: none;
+  text-align: center;
+}
+.follow-btn:hover {
+  background-color: #dedede;
+}
+.follow-btn:active {
+  position: relative;
+  top: 1px;
+}

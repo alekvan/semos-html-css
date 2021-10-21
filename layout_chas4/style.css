@@ -1,67 +1,86 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&family=Roboto&display=swap");
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: 0;
-}
-
-section {
-  box-sizing: border-box;
-}
-
-.menu {
+.root-card {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  list-style-type: none;
-  padding: 0.5rem;
-  background: cornflowerblue;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-img {
+  display: flex;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 110px;
 }
 
-.menu > li {
-  padding: 0.5rem;
-}
-
-.menu > li > a {
-  color: rgb(26, 95, 117);
-  text-decoration: none;
-  font-size: larger;
-  font-family: "Raleway", sans-serif;
-}
-
-.welcome-section {
+.card-name {
+  width: 300px;
+  height: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 3rem;
+  justify-content: center;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 3px;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
 }
 
-.welcome-section > h1 {
-  padding-bottom: 1rem;
-  font-family: "Raleway", sans-serif;
+.card-at {
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  color: rgb(151, 151, 151);
 }
 
-.myButton {
-  box-shadow: 0px 10px 14px -7px #356b9e;
-  background: linear-gradient(to bottom, #3d8bd4 5%, #65ace7 100%);
-  background-color: #599bb3;
-  border-radius: 8px;
-  display: inline-block;
-  cursor: pointer;
-  color: #cedfff;
-  font-family: "Raleway";
-  font-size: 15px;
-  font-weight: bold;
-  padding: 8px 15px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #1d5992;
+.card-bio {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  width: 200px;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  text-align: center;
 }
-.myButton:hover {
-  background: linear-gradient(to bottom, #2a6fbe 5%, #1a4980 100%);
-  background-color: #2e61a3;
+
+.card-tags {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.myButton:active {
-  position: relative;
-  top: 1px;
+
+.card-tags > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.card-tags > ul > li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 3px;
+  padding: 3px;
+  text-align: center;
+  background: rgb(243, 243, 243);
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: rgb(105, 105, 105);
 }

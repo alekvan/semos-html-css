@@ -1,5 +1,6 @@
 .header-fixed {
   display: flex;
+  justify-content: space-between;
   position: fixed;
   flex-direction: row;
   background: rgb(2, 189, 148);
@@ -7,6 +8,21 @@
   left: 0;
   width: 100%;
   height: 45px;
+  align-items: center;
+}
+
+.header-pass {
+  display: flex;
+  margin-right: 5px;
+}
+
+.header-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  margin-left: 5px;
 }
 
 .card-root {

@@ -79,7 +79,8 @@ a {
   border-top: 2px solid rgb(182, 182, 182);
 }
 
-.info-left-panel {
+.info-left-panel,
+.role-left-panel {
   display: flex;
   flex-direction: column;
   width: 150px;
@@ -90,7 +91,8 @@ a {
   margin-block-start: 7px;
 }
 
-.info-right-panel {
+.info-right-panel,
+.role-right-panel {
   display: flex;
   flex-direction: column;
   width: 150px;
@@ -111,21 +113,8 @@ a {
   border-top: 2px solid rgb(182, 182, 182);
 }
 
-.role-left-panel {
-  display: flex;
-  flex-direction: column;
-  width: 150px;
-  margin-left: 10px;
-}
-
 .role-left-panel > p {
   margin-block-start: 7px;
-}
-
-.role-right-panel {
-  display: flex;
-  flex-direction: column;
-  width: 150px;
 }
 
 .role-right-panel > p {

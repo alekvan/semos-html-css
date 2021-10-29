@@ -147,7 +147,6 @@ img {
 .bottom-card-btns {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -167,7 +166,7 @@ img {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 5px;
-    width: 100%;
+    width: 1400px;
     margin-left: auto;
     margin-right: auto;
   }

@@ -3,7 +3,6 @@ ul {
 }
 
 .card {
-  /* padding: 10px; */
   border: 1px solid grey;
   box-shadow: 0px 14px 19px 10px rgba(174, 174, 174, 0.42);
   width: 33%;
@@ -20,13 +19,14 @@ ul {
 .card-text-box {
   padding-left: 10px;
   padding-top: 5px;
+  text-align: left;
 }
 
 .kursevi {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .mate {
@@ -40,46 +40,46 @@ ul {
 .fiz {
   opacity: 0;
   animation-name: visible;
-  animation-duration: 1s;
+  animation-duration: 100ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
-  animation-delay: 1s;
+  animation-delay: 100ms;
 }
 
 .prog {
   opacity: 0;
   animation-name: visible;
-  animation-duration: 1s;
+  animation-duration: 100ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
-  animation-delay: 2s;
+  animation-delay: 200ms;
 }
 
 .design {
   opacity: 0;
   animation-name: visible;
-  animation-duration: 1s;
+  animation-duration: 150ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
-  animation-delay: 3s;
+  animation-delay: 300ms;
 }
 
 .elektron {
   opacity: 0;
   animation-name: visible;
-  animation-duration: 1s;
+  animation-duration: 100ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
-  animation-delay: 4s;
+  animation-delay: 400ms;
 }
 
 .energy {
   opacity: 0;
   animation-name: visible;
-  animation-duration: 1s;
+  animation-duration: 100ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
-  animation-delay: 5s;
+  animation-delay: 500ms;
 }
 
 .site-zaedno {
@@ -181,6 +181,12 @@ ul {
   margin-right: 20px;
   margin-left: 20px;
   border-left: 1px solid rgb(70, 109, 109);
+}
+
+@media only screen and (min-width: 769px) {
+  .card {
+    min-width: 33%;
+  }
 }
 
 @media only screen and (max-width: 768px) {

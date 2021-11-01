@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+#logo {
+  margin-right: none;
+}
+
+.menu-vertical {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  background-color: #031240;
+  color: white;
+  flex-direction: column;
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  height: 0;
+  width: 100vw;
+  overflow: hidden;
+  top: 0;
+  transition: all 0.5s ease;
+}
+
+.menu-vertical:target {
+  height: 100vh;
+}
+
+.menu-vertical > li {
+  padding: 0.5rem;
+}
+
+.menu-vertical > li > a {
+  color: unset;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+section {
+  padding: 1rem; /* 1920x1080 = 16px */
+  color: #031240;
+}
+
+section button {
+  color: white;
+  background-color: #378DAA;
+  border-radius: 5px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 300ms;
+}
+
+section button:hover {
+  background-color: #031240;
+}
+
+.greeting {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.greeting h1 {
+  margin: 2rem 0 2rem 0;
+}
+
+.content {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.column button {
+  margin-top: auto;
+}
+
+.wrap {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1024px) {
+  .burger-menu {
+    display: flex;
+  }
+  
+  .content {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .content {
+    flex-direction: row;
+  }
+
+  .greeting {
+    align-items: center;
+  }
+
+  .menu-vertical {
+    position: unset;
+    flex-direction: row;
+    display: flex;
+    height: 60px;
+    width: auto;
+    transition: none;
+  }
+
+  #close {
+    display: none;
+  }
+
+  #logo {
+    margin-right: auto;
+  }
+}
+
+
+
+
+

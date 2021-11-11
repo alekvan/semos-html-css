@@ -8,5 +8,5 @@ for (let i = 0; i < temp.length; i++) {
     cold = temp[i];
   }
 }
-console.log(`Najgolemata temperatura e ${hot}`);
-console.log(`Najmalata temperatura e ${cold}`);
+console.log(`Najvisokata temperatura e ${hot}`);
+console.log(`Najniskata temperatura e ${cold}`);

@@ -25,7 +25,7 @@ function checkPalindrom(word) {
   }
   let chars = word.split("");
   let wordLength = chars.length - 1;
-  let flag = true;
+  let flag = false;
   for (let i = 0; i < chars.length / 2; i++) {
     if (chars[i] === chars[wordLength]) {
       wordLength--;

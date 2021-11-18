@@ -138,10 +138,11 @@ function letterCount(word) {
 letterCount("Hello");
 console.log(letterCount("Hello"));
 
-function formattedDate(day, month, year) {
+function formattedDate(date) {
+    if(day >31 || month > 12)
   const month = date.getMonth() + 1;
   const day = date.getDate() + 1;
   const year = date.getFullYear();
-  const formatDate = "${day}.${month}.${year}";
-  return formatDate;
+  return format;
 }
+console.log(object);

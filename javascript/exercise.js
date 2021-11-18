@@ -40,17 +40,24 @@ console.log(checkPalindrom(word));
 
 //NAJDOLG ZBOR VO RECHENICA
 
-const sent = "He didn't understand why the bird wanted to ride the bicycle";
+const sent = "The doll spun around in circles in hopes of coming alive";
 function getLongWord(sentence) {
   let wordsInSentence = sentence.split(" ");
   let lengthCheck = wordsInSentence[0].length;
+  let wordArr = [];
   for (let i = 0; i < wordsInSentence.length; i++) {
     if (lengthCheck < wordsInSentence[i].length) {
       lengthCheck = wordsInSentence[i].length;
-      largestWord = wordsInSentence[i];
     }
   }
-  return `Najdolgiot zbor e ${largestWord}`;
+  for (let j = 0; j < wordsInSentence.length; j++) {
+    if (lengthCheck === wordsInSentence[j].length) {
+      wordArr.push(wordsInSentence[j]);
+    }
+  }
+  return wordArr.length > 1
+    ? `Najdolgite zborovi se ${wordArr}`
+    : `Najdolgiot zbor e ${wordArr}`;
 }
 
 console.log(getLongWord(sent));

@@ -24,40 +24,52 @@ function checkPalindrom(word) {
     return "Wrong input";
   }
   let chars = word.split("");
-  let wordLength = chars.length - 1;
-  let flag = false;
-  for (let i = 0; i < chars.length / 2; i++) {
-    if (chars[i] === chars[wordLength]) {
-      wordLength--;
-      flag = true;
-    } else return "Ne e palindrom";
-  }
-  if (flag) {
+  let reverseArr = chars.slice().reverse();
+  // let wordLength = chars.length - 1;
+  // let flag = false;
+
+  if (chars.join() === reverseArr.join()) {
     return "Zborot e palindrom";
-  }
+  } else return "Ne e palindrom";
+  // for (let i = 0; i < chars.length / 2; i++) {
+  //   if (chars[] === reverseArr[]) {
+
+  //     return "Zborot e palindrom"
+  //   } else return "Ne e palindrom";
+  // }
+  //if (flag) {
+  //return "Zborot e palindrom";
+  //}
 }
 console.log(checkPalindrom(word));
 
 //NAJDOLG ZBOR VO RECHENICA
 
-const sent = "The doll spun around in circles in hopes of coming alive";
+const sent = "The doll spun around in circle in hopes of coming alive";
 function getLongWord(sentence) {
   let wordsInSentence = sentence.split(" ");
-  let lengthCheck = wordsInSentence[0].length;
-  let wordArr = [];
+  let lengthCheck = 0;
+  //let wordArr = [];
+  let empt = [];
   for (let i = 0; i < wordsInSentence.length; i++) {
-    if (lengthCheck < wordsInSentence[i].length) {
+    // if (lengthCheck < wordsInSentence[i].length) {
+    //   lengthCheck = wordsInSentence[i].length;
+    // }
+    if (wordsInSentence[i].length > lengthCheck) {
+      empt = [];
       lengthCheck = wordsInSentence[i].length;
+      empt.push(wordsInSentence[i]);
+    } else if (wordsInSentence[i].length === lengthCheck) {
+      empt.push(wordsInSentence[i]);
     }
   }
-  for (let j = 0; j < wordsInSentence.length; j++) {
-    if (lengthCheck === wordsInSentence[j].length) {
-      wordArr.push(wordsInSentence[j]);
-    }
-  }
-  return wordArr.length > 1
-    ? `Najdolgite zborovi se ${wordArr}`
-    : `Najdolgiot zbor e ${wordArr}`;
+  // for (let j = 0; j < wordsInSentence.length; j++) {
+  //   if (lengthCheck === wordsInSentence[j].length) {
+  //     wordArr.push(wordsInSentence[j]);
+  //   }
+  // }
+  return empt.length > 1
+    ? `Najdolgite zborovi se ${empt}`
+    : `Najdolgiot zbor e ${empt}`;
 }
-
 console.log(getLongWord(sent));

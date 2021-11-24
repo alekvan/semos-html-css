@@ -29,8 +29,8 @@ function checkPalindrom(word) {
   // let flag = false;
 
   if (chars.join() === reverseArr.join()) {
-    return "Zborot e palindrom";
-  } else return "Ne e palindrom";
+    return true;
+  } else return false;
   // for (let i = 0; i < chars.length / 2; i++) {
   //   if (chars[] === reverseArr[]) {
 

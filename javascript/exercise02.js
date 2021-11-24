@@ -1,7 +1,7 @@
 // const word = "slon";
 // const regex = /[aeiou]/;
 // const vowelCheck = regex.test(word);
-// const word = "pichka";
+// const word = "fotografija";
 // const reg = /(?<=[aeiou])/g;
 // console.log("word split", word.split(reg));
 

@@ -30,4 +30,3 @@ coffee1.makeCoffee(7, 20, 100);
 coffee1.makeCoffee(7, 20, 100);
 coffee1.makeCoffee(7, 20, 100);
 coffee1.makeCoffee(7, 20, 100);
-coffee1.makeCoffee(7, 20, 100);

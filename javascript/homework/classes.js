@@ -3,16 +3,16 @@ class Kafemat {
     this.coffee = coffee;
     this.milk = milk;
     this.water = water;
-    this.numOfCoffeesMade = 0;
+    this.numOfCoffees = 0;
   }
 
   makeCoffee(neededCoffee, neededMilk, neededWater) {
     if (this.coffee >= 7 && this.milk >= 20 && this.water >= 100) {
-      this.numOfCoffeesMade++;
+      this.numOfCoffees++;
       this.coffee -= neededCoffee;
       this.milk -= neededMilk;
       this.water -= neededWater;
-      console.log(this.coffee, this.milk, this.water);
+      console.log(`Your coffee is ready`);
     } else {
       if (this.coffee < 7) console.log(`Missing ${7 - this.coffee} coffee`);
       else if (this.milk < 20) console.log(`Missing ${20 - this.milk} milk`);
@@ -30,3 +30,4 @@ coffee1.makeCoffee(7, 20, 100);
 coffee1.makeCoffee(7, 20, 100);
 coffee1.makeCoffee(7, 20, 100);
 coffee1.makeCoffee(7, 20, 100);
+console.log(`Coffees made ${coffee1.numOfCoffees}`);

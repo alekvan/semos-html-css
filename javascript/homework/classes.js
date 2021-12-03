@@ -1,9 +1,9 @@
 class Kafemat {
+  numOfCoffees = 0;
   constructor(coffee, milk, water) {
     this.coffee = coffee;
     this.milk = milk;
     this.water = water;
-    this.numOfCoffees = 0;
   }
 
   makeCoffee(neededCoffee, neededMilk, neededWater) {

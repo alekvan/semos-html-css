@@ -23,7 +23,7 @@ async function renderUsers() {
                           <b>Address:</b> ${card.address.street}, ${card.address.suite}, ${card.address.city} <br>
                           <b>Tel:</b> ${card.phone} </br>
                           <b>Job:</b> ${card.company.bs} </br>
-                          <a href="${card.email}">${card.email}</a> 
+                          <a href="${card.email}">${card.email}</a>
                         </p>
                       </div>
                     </div>`;

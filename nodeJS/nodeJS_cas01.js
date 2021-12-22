@@ -1,5 +1,3 @@
-console.log("Hello World");
-
 let clubs = [
   {
     name: "Barcelona",
